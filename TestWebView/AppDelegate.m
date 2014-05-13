@@ -17,6 +17,8 @@
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Page" withExtension:@"html"];
     
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    
+    //Load request
     [[self.webview mainFrame] loadRequest:req];
 }
 
